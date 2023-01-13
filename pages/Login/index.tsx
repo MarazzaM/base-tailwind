@@ -1,11 +1,11 @@
 import type { ReactElement } from 'react'
-import Layout from '@/components/layouts/Dashboard'
-import type { NextPageWithLayout } from './_app'
+import Layout from '@/components/layouts/Clean'
+import type { NextPageWithLayout } from '../_app'
 import Link from 'next/link'
 
 const Page: NextPageWithLayout = () => {
-  return <div>
-    <Link href='/Login'>ir a login</Link>
+    return <div>
+    <Link href='/Dashboard'>ir a home</Link>
   </div>
 }
 
