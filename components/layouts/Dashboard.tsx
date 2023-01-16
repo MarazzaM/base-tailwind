@@ -1,9 +1,10 @@
-
+import Navbar from "../ui/Dashboard/Navbar"
 
 export default function Layout({ children }:any) {
   return (
     <>
-      <main>pato{children}</main>
+    <Navbar />
+      <main>{children}</main>
     </>
   )
 }
