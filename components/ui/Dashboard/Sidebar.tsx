@@ -14,9 +14,9 @@ const Sidebar = () => {
     const [open, setOpen] = useState(false)
 
     const Menus = [
-        { title: 'Dashboard', path: '/dashboard', src: <AiFillPieChart /> },
-        { title: 'Course', path: '/course', src: <SiFuturelearn /> },
-        { title: 'Profile', path: '/profile', src: <CgProfile /> },
+        { title: 'Dashboard', path: '/Dashboard', src: <AiFillPieChart /> },
+        { title: 'Course', path: '/Clean', src: <SiFuturelearn /> },
+        { title: 'Profile', path: '/Configuration', src: <CgProfile /> },
         { title: 'Signin', path: '/login', src: <SiOpenaccess />, gap: 'true' },
     ]
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
 
                 <ul className='pt-6'>
                     {Menus.map((menu, index) => (
-                        <a href={menu.path} key={index}>
+                        <Link href={menu.path} key={index}>
                             <li
                                 className={`flex items-center  gap-x-6 p-3 text-base font-normal rounded-lg cursor-pointer  hover:bg-gray-200  text-font hover:text-primary ${open ?  'justify-start' :  'justify-center'} `}>
                                 <span className='text-2xl'>{menu.src}</span>
@@ -53,7 +53,7 @@ const Sidebar = () => {
                                     {menu.title}
                                 </span>
                             </li>
-                        </a>
+                        </Link>
                     ))}
                 </ul>
             </div>

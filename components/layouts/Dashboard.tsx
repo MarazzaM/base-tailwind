@@ -4,9 +4,13 @@ import Sidebar from "../ui/Dashboard/Sidebar"
 export default function Layout({ children }:any) {
   return (
     <>
-    <Navbar />
+    <div className="flex">
     <Sidebar />
-      <main>{children}</main>
+    {/* <Navbar /> */}
+      <main className='flex-1'>
+          {children}
+        </main>
+        </div>
     </>
   )
 }
