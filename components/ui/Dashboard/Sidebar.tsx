@@ -29,8 +29,8 @@ const Sidebar = () => {
         <>
             <div
                 className={`${
-                    open ? 'w-60' : 'w-fit '
-                }  sm:block relative h-screen ease-in-out duration-300	 bg-white border-r border-gray-200 `}
+                    open ? 'w-60' : 'w-20 '
+                }  sm:block relative h-screen transition-all  bg-white border-r border-gray-200 `}
             >
                 <ArrowLeftCircleIcon
                     className={`${
