@@ -6,18 +6,21 @@ import { SiFuturelearn } from 'react-icons/si'
 import { SiOpenaccess } from 'react-icons/si'
 import { CgProfile } from 'react-icons/cg'
 import Logo from '../../../public/logo.png'
-
+//next imports
+import { useRouter } from "next/router";
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Sidebar = () => {
     const [open, setOpen] = useState(false)
+    const router = useRouter();
+    const currentRoute = router.pathname;
 
     const Menus = [
         { title: 'Dashboard', path: '/Dashboard', src: <AiFillPieChart /> },
-        { title: 'Course', path: '/Clean', src: <SiFuturelearn /> },
-        { title: 'Profile', path: '/Configuration', src: <CgProfile /> },
-        { title: 'Signin', path: '/login', src: <SiOpenaccess />, gap: 'true' },
+        { title: 'Tablas', path: '/Clean', src: <SiFuturelearn /> },
+        { title: 'Config', path: '/Configuration', src: <CgProfile /> },
+        { title: 'Signout', path: '/Login', src: <SiOpenaccess />, gap: 'true' },
     ]
 
     return (
@@ -25,7 +28,7 @@ const Sidebar = () => {
             <div
                 className={`${
                     open ? 'w-60' : 'w-fit'
-                } hidden sm:block relative h-screen duration-300 bg-white border-r border-gray-200 `}
+                }  sm:block relative h-screen duration-300 bg-white border-r border-gray-200 `}
             >
                 <BsArrowLeftCircle
                     className={`${
@@ -43,7 +46,7 @@ const Sidebar = () => {
                     {Menus.map((menu, index) => (
                         <Link href={menu.path} key={index}>
                             <li
-                                className={`flex items-center  gap-x-6 p-3 text-base font-normal rounded-lg cursor-pointer  hover:bg-gray-200  text-font hover:text-primary ${open ?  'justify-start' :  'justify-center'} `}>
+                                className={`flex items-center  gap-x-6 p-3 text-base font-normal rounded-lg cursor-pointer  hover:bg-gray-200  text-font hover:text-primary ${open ?  'justify-start' :  'justify-center'} ${currentRoute === `${menu.path}` ? 'text-red-600' : 'uwu'} `}>
                                 <span className='text-2xl'>{menu.src}</span>
                                 <span
                                     className={`${
