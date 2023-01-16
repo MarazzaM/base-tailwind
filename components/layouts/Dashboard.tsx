@@ -8,7 +8,9 @@ export default function Layout({ children }:any) {
     <Sidebar />
       <main className='flex-1'>
     <Navbar />
+          <div className="p-4">
           {children}
+          </div>
         </main>
         </div>
     </>

@@ -1,16 +1,12 @@
 import type { ReactElement } from 'react'
-import Layout from '@/components/layouts/Clean'
-import type { NextPageWithLayout } from './_app'
-import Link from 'next/link'
-
-import Hero from '@/components/ui/Landing/Hero'
-
+import Layout from '@/components/layouts/Dashboard'
+import type { NextPageWithLayout } from '../_app'
 
 const Page: NextPageWithLayout = () => {
-  return (
-    <div>
-     <Hero />
-    </div>
+    return (
+      <div>
+        Tablas
+      </div>
   )
 }
 
