@@ -35,7 +35,7 @@ const Sidebar = () => {
                 <ArrowLeftCircleIcon
                     className={`${
                         !open && 'rotate-180'
-                    } absolute text-3xl bg-white   rounded-full cursor-pointer top-16 -right-4 hover:fill-primary transition-all duration-700 h-8 w-8`}
+                    } absolute text-3xl bg-white text-gray-400  rounded-full cursor-pointer top-16 -right-4 hover:text-primary transition-all duration-700 h-8 w-8`}
                     onClick={() => setOpen(!open)}
                 />
                 <Link href='/'>
