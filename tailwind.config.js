@@ -8,12 +8,13 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#00aeef',
-        'secondary': '#ff7849',
+        'secondary': '#0093cb',
         'tertiary': '#13ce66',
         'accents': '#ffc82c',
         'borders': '#273444',
         'contrast': '#222222',
         'font':'#444',
+        'font-secondary':'#333333'
       },
       fontFamily: {
         work: ['var(--font-work)']
