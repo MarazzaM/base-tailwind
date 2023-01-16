@@ -29,6 +29,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('/madera.jpg')",
+        'gradient':"linear-gradient(to top, rgba(0,172,236,0.3) 0%, rgba(255,255,255,0) 30%)",
+        'fuse': "linear-gradient(to top, rgba(0,172,236,0.3) 0%, rgba(255,255,255,0) 30%), url(/madera.jpg)"
       }
 
     },

@@ -28,7 +28,7 @@ export default function Hero() {
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
-                    href="/Dashboard"
+                    href="/Login/Enter"
                     className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                   >
                     Iniciar sesión{' '}
@@ -36,15 +36,15 @@ export default function Hero() {
                       &rarr;
                     </span>
                   </Link>
-                  <a
-                    href="#"
+                  <Link
+                    href="/Login/Register"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
                   >
                     Crear cuenta{' '}
                     <span className="text-gray-400" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               

@@ -1,12 +1,19 @@
 import type { ReactElement } from 'react'
-import Layout from '@/components/layouts/Dashboard'
-import type { NextPageWithLayout } from '../_app'
+import Layout from '@/components/layouts/Clean'
+import type { NextPageWithLayout } from '../../_app'
 
 const Page: NextPageWithLayout = () => {
     return (
-      <div>
-        Página principal dashboard
-      </div>
+      <>
+
+    <div className='bg-fuse h-full min-h-screen'>
+
+  </div>
+
+    <div className=''>
+    </div>
+
+  </>
   )
 }
 

@@ -38,7 +38,7 @@ const Sidebar = () => {
                     } absolute text-3xl bg-white text-gray-400  rounded-full cursor-pointer top-16 -right-4 hover:text-primary transition-all duration-700 h-8 w-8`}
                     onClick={() => setOpen(!open)}
                 />
-                <Link href='/'>
+                <Link href='/Dashboard'>
                     <div className={`flex ${open && 'gap-x-4'} items-center justify-center`}>
                         <Image width={75} height={75} src={Logo} alt='' className=' p-2' />
                     </div>
