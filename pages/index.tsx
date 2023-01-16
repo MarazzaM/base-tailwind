@@ -8,7 +8,7 @@ import Hero from '@/components/ui/Landing/Hero'
 
 const Page: NextPageWithLayout = () => {
   return (
-    <div>
+    <div className='bg-hero bg-center bg-cover h-full min-h-screen flex justify-center items-center-'>
      <Hero />
     </div>
   )

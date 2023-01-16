@@ -1,8 +1,9 @@
+import Link from "next/link"
+
 export default function Hero() {
 
   return (
-    <div className="isolate bg-white">
-
+    <div className="isolate">
       <main>
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
@@ -10,7 +11,7 @@ export default function Hero() {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   <span className="text-gray-600">
-                  Si está buscando el sitio timbo.com.ar {' '}
+                  Si está buscando el sitio www.timbo.com.ar {' '}
                     <a href="https://www.timbo.com.ar/" target='_blank' className="font-semibold text-indigo-600">
                       <span className="absolute inset-0" aria-hidden="true" />
                       Ir al sitio <span aria-hidden="true">&rarr;</span>
@@ -23,11 +24,10 @@ export default function Hero() {
                  Bienvenidos a Timbó
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
+                  Aplicación web en dónde clientes y Timbó convergen para realizar distintas tareas del órden administrativo, para satisfacer necesidades comerciales.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <a
+                  <Link
                     href="/Dashboard"
                     className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                   >
@@ -35,7 +35,7 @@ export default function Hero() {
                     <span className="text-indigo-200" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
