@@ -16,6 +16,7 @@ module.exports = {
         'font':'#444',
       },
       fontFamily: {
+        work: ['var(--font-work)']
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

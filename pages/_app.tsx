@@ -1,6 +1,12 @@
 import type { ReactElement, ReactNode } from 'react'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import {Work_Sans} from '@next/font/google'
+
+const WorkSans = Work_Sans({ 
+  subsets: ['latin'],
+  variable: '--font-work',
+ })
 import '../styles/styles.css'
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -15,5 +21,9 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page)
 
-  return getLayout(<Component {...pageProps} />)
+  return getLayout(
+  <main className={`${WorkSans.variable} font-work`}>
+    <Component {...pageProps} />
+  </main>
+  )
 }
